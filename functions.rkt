@@ -1,0 +1,10 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname functions) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #t)))
+(define (stirling n) (* (expt n (+ n 1/2)) (expt e (- 1 n))))
+
+(define (hm x y z) (/ 3 (+ (+ (/ 1 x) (/ 1 y)) (/ 1 z))))
+
+(define g 9.8)
+(define (height v t) (- (* v t) (* (* 1/2 g) (* t t))))
+
